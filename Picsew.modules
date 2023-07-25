@@ -3,6 +3,6 @@
 #!author=sc
 
 [Script]
-1blocker= type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Picsew.js
+picsew= type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Picsew.js
 [MITM]
 hostname = buy.itunes.apple.com
