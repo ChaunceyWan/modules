@@ -1,0 +1,8 @@
+#!name=网易云
+#!desc=网易云会员
+#!author=sc
+
+[Script]
+picsew= type=http-response,pattern=^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$,requires-body=1,script-path=https://raw.githubusercontent.com/WeiRen0/Scripts/main/wyun.js
+[MITM]
+hostname = buy.itunes.apple.com
