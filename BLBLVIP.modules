@@ -3,15 +3,15 @@
 #!author=sc
 
 [URL Rewrite]
-^https?:\/\/app\.bilibili\.com\/x\/resource\/ip - reject
-^http[s]?:\/\/api\.bilibili\.com\/x\/member\/app\/face\/update\?access_key - reject-200
-^http[s]?:\/\/app\.bilibili\.com\/bilibili\.app\.interface\.v1\.Teenagers\/UpdateStatus - reject-200
-^http[s]?:\/\/api\.bilibili\.com\/x\/member\/app\/uname\/update\?_device - reject-200
+^https?:\/\/app\.bilibili\.com\/x\/resource\/ip url reject
+^http[s]?:\/\/api\.bilibili\.com\/x\/member\/app\/face\/update\?access_key url reject-200
+^http[s]?:\/\/app\.bilibili\.com\/bilibili\.app\.interface\.v1\.Teenagers\/UpdateStatus url reject-200
+^http[s]?:\/\/api\.bilibili\.com\/x\/member\/app\/uname\/update\?_device url reject-200
 ^http[s]?:\/\/.*passport-login\/revoke url reject
-^http[s]?:\/\/api\.biliapi\.net\/x\/v2\/reply\/add - reject-200
-^http[s]?:\/\/passport\.bilibili\.com\/x\/passport-login\/type - reject
-^http[s]?:\/\/api\.bilibili\.com\/x\/v2\/reply\/add - reject-200
-^http[s]?:\/\/app\.bilibili\.com\/x\/v2\/splash\/show - reject-dict
+^http[s]?:\/\/api\.biliapi\.net\/x\/v2\/reply\/add url reject-200
+^http[s]?:\/\/passport\.bilibili\.com\/x\/passport-login\/type url reject
+^http[s]?:\/\/api\.bilibili\.com\/x\/v2\/reply\/add url reject-200
+^http[s]?:\/\/app\.bilibili\.com\/x\/v2\/splash\/show url reject-dict
 
 [Script]
 bili1=type=http-response,pattern=^http[s]?:\/\/((app)|(passport)|(api))\.bilibili\.com\/x\/.*(account\/mine\?|passport-login|vip|show\/tab|account\/myinfo\?).*$,requires-body=1,script-path=https://raw.githubusercontent.com/WeiRen0/Scripts/main/BLBLVIP.js
