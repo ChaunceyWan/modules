@@ -6,7 +6,7 @@
 
 [Script]
 
-wyds= type=http-response,pattern=^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/yywnds.js
+wyds= type=http-response,pattern=^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/yywnds.js
 
 [MITM]
 
